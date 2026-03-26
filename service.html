@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services — InkCraft Studios | Content Writing &amp; SEO</title>
+  <meta name="description" content="Explore InkCraft Studios' full range of content writing services — blog posts, web copy, product descriptions, email campaigns, ghostwriting, press releases, on-page SEO, and more." />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* FAQ accordion styles */
+    .faq-section { padding: 100px 0; background: var(--warm); }
+    .faq-list { max-width: 760px; margin: 56px auto 0; display: flex; flex-direction: column; gap: 0; }
+    .faq-item { border-bottom: 1px solid rgba(13,13,13,0.12); }
+    .faq-question {
+      width: 100%; background: none; border: none; cursor: pointer;
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 24px 0;
+      font-family: var(--ff-head); font-size: 1.05rem; font-weight: 700;
+      color: var(--ink); text-align: left; gap: 16px;
+    }
+    .faq-question .faq-icon { font-size: 1.2rem; transition: transform 0.3s; flex-shrink: 0; color: var(--gold); }
+    .faq-item.open .faq-question .faq-icon { transform: rotate(45deg); }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
+    .faq-answer p { padding: 0 0 24px; font-family: var(--ff-sub); font-size: 1rem; color: var(--muted); line-height: 1.85; }
+
+    /* Contact section */
+    .contact-section { padding: 100px 0; background: var(--ink); }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; margin-top: 0; }
+    .contact-info h2 { font-family: var(--ff-head); font-size: 2rem; font-weight: 700; color: var(--cream); margin-bottom: 16px; }
+    .contact-info p { font-family: var(--ff-sub); font-size: 1.05rem; color: rgba(245,240,232,0.6); line-height: 1.85; margin-bottom: 36px; }
+    .contact-detail { display: flex; gap: 14px; align-items: flex-start; margin-bottom: 20px; }
+    .contact-detail-icon { width: 40px; height: 40px; background: rgba(201,168,76,0.15); border: 1px solid rgba(201,168,76,0.3); border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 1rem; flex-shrink: 0; }
+    .contact-detail-text strong { display: block; font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gold); margin-bottom: 2px; }
+    .contact-detail-text span { font-size: 0.9rem; color: rgba(245,240,232,0.7); }
+    .contact-form-box { background: var(--cream); border-radius: 6px; padding: 44px; }
+    .contact-form-box h3 { font-family: var(--ff-head); font-size: 1.4rem; font-weight: 700; margin-bottom: 28px; }
+
+    @media(max-width:768px){
+      .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+    }
+  </style>
+</head>
+<body class="light-page">
+
+  <!-- ══ NAVBAR ══════════════════════════════════════════════ -->
+  <nav class="navbar light-nav">
+    <a href="index.html" class="nav-logo">Ink<span>Craft</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="privacy.html">Privacy</a></li>
+      <li><a href="refund.html">Refund Policy</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta">Get a Quote</a>
+    <div class="hamburger" aria-label="Open menu" role="button" tabindex="0">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" aria-hidden="true">
+    <button class="mobile-close" aria-label="Close menu">✕</button>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="refund.html">Refund Policy</a>
+    <a href="#contact" class="btn btn-primary">Get a Quote</a>
+  </div>
+
+  <!-- ══ PAGE HERO ════════════════════════════════════════════ -->
+  <section class="page-hero">
+    <div class="page-hero-bg"></div>
+    <div class="container page-hero-content">
+      <span class="tag">Our Services</span>
+      <h1>Every word, <em>crafted</em><br>with purpose</h1>
+      <p>Ten specialised content writing and SEO services, built around what modern brands actually need to grow their audience and their revenue.</p>
+    </div>
+  </section>
+
+  <!-- ══ ALL 10 SERVICES ═══════════════════════════════════════ -->
+  <section class="section">
+    <div class="container">
+      <span class="tag">What We Offer</span>
+      <h2 class="section-title">Complete content solutions<br>under one roof</h2>
+      <div class="all-services-grid">
+
+        <!-- 1 -->
+        <div class="service-full-card reveal">
+          <div class="sfc-icon">📝</div>
+          <div class="sfc-body">
+            <h3>Blog &amp; Article Writing</h3>
+            <p>Long-form, well-researched blog posts and articles that position your brand as an authority. We handle topic ideation, keyword mapping, outline creation, writing, and internal linking — so your blog consistently earns organic traffic month after month.</p>
+            <div class="sfc-tags">
+              <span class="sfc-tag">500 – 3,000 words</span>
+              <span class="sfc-tag">SEO-Optimised</span>
+              <span class="sfc-tag">Niche Research</span>
+              <span class="sfc-tag">Custom Tone</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="service-full-card reveal">
+          <div class="sfc-icon">🌐</div>
+          <div class="sfc-body">
+            <h3>Website Copywriting</h3>
+            <p>Clear, persuasive copy for every page of your website — homepage, about page, services pages, and landing pages. We use proven copywriting frameworks (PAS, AIDA, StoryBrand) to guide visitors through a journey that ends with them taking action.</p>
+            <div class="sfc-tags">
+              <span class="sfc-tag">Homepage Copy</span>
+              <span class="sfc-tag">Landing Pages</span>
+              <span class="sfc-tag">CTA Optimisation</span>
+              <span class="sfc-tag">Conversion Focus</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="service-full-card reveal">
+          <div class="sfc-icon">🛍️</div>
+          <div class="sfc-body">
+            <h3>Product Description Writing</h3>
+            <p>Benefit-driven product copy for e-commerce websites, Amazon listings, and marketplaces. We craft descriptions that appeal to both human buyers and search algorithms — balancing persuasive storytelling with the right keywords to improve visibility and conversion rates.</p>
+            <div class="sfc-tags">
+              <span class="sfc-tag">Amazon SEO</span>
+              <span class="sfc-tag">Shopify Ready</span>
+              <span class="sfc-tag">Bulk Orders</span>
+              <span class="sfc-tag">A+ Content</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="service-full-card reveal">
+          <div class="sfc-icon">📧</div>
+          <div class="sfc-body">
+            <h3>Email Copywriting &amp; Newsletters</h3>
+            <p>From cold outreach sequences to nurture campaigns and weekly newsletters, we write emails that subscribers actually look forward to. Every email has a clear objective, a gripping subject line, and a call-to-action that generates clicks — not unsubscribes.</p>
+            <div class="sfc-tags">
+              <span class="sfc-tag">Drip Campaigns</span>
+              <span class="sfc-tag">Cold Outreach</span>
+              <span class="sfc-tag">Newsletters</span>
+              <span class="sfc-tag">A/B Testing Copy</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="service-full-card reveal">
+          <div class="sfc-icon">📱</div>
+          <div class="sfc-body">
+            <h3>Social Media Content Writing</h3>
+            <p>Platform-specific content for LinkedIn, Instagram, Twitter/X, Facebook, and YouTube. We write captions, carousel scripts, thread structures, and bio copy that build a consistent brand voice and grow genuine engagement — not just follower numbers.</p>
+            <div class="sfc-tags">
+              <span class="sfc-tag">LinkedIn Posts</span>
+              <span class="sfc-tag">Instagram Captions</span>
+              <span class="sfc-tag">Threads &amp; Twitter</span>
+              <span class="sfc-tag">Content Calendar</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="service-full-card reveal">
+          <div class="sfc-icon">🔎</div>
+          <div class="sfc-body">
+            <h3>On-Page SEO Optimisation</h3>
+            <p>A full on-page audit and rewrite service covering title tags, meta descriptions, heading hierarchy (H1–H4), keyword density, image alt text, internal linking structure, schema markup suggestions, and content freshness updates. We make your existing pages perform the way they should.</p>
+            <div class="sfc-tags">
+              <span class="sfc-tag">Meta Optimisation</span>
+              <span class="sfc-tag">Heading Rewrite</span>
+              <span class="sfc-tag">Schema Suggestions</span>
+              <span class="sfc-tag">Core Web Vitals Copy</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="service-full-card reveal">
+          <div class="sfc-icon">👤</div>
+          <div class="sfc-body">
+            <h3>Ghostwriting &amp; Thought Leadership</h3>
+            <p>You have the expertise and the insights. We turn them into polished articles, LinkedIn posts, opinion pieces, and books that carry your name and your voice — with none of the time cost. Our ghostwriters interview you, capture your tone, and deliver content that sounds authentically like you.</p>
+            <div class="sfc-tags">
+              <span class="sfc-tag">LinkedIn Ghostwriting</span>
+              <span class="sfc-tag">Book Chapters</span>
+              <span class="sfc-tag">Op-Ed Articles</span>
+              <span class="sfc-tag">Executive Voice</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="service-full-card reveal">
+          <div class="sfc-icon">📣</div>
+          <div class="sfc-body">
+            <h3>Press Release Writing</h3>
+            <p>Newsworthy, journalist-friendly press releases for product launches, funding rounds, partnerships, and events. We format them to industry standards, optimise the headline for wire distribution, and include the right quotes and boilerplate to maximise media pickup.</p>
+            <div class="sfc-tags">
+              <span class="sfc-tag">AP Style</span>
+              <span class="sfc-tag">Wire-Ready Format</span>
+              <span class="sfc-tag">Headline Optimised</span>
+              <span class="sfc-tag">Media Pitching</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9 -->
+        <div class="service-full-card reveal">
+          <div class="sfc-icon">📊</div>
+          <div class="sfc-body">
+            <h3>Case Studies &amp; White Papers</h3>
+            <p>In-depth, evidence-backed content that demonstrates your expertise and supports long sales cycles. Our writers conduct interviews, synthesise data, and craft narratives that turn a business result into a compelling, shareable story — ideal for B2B brands and professional services firms.</p>
+            <div class="sfc-tags">
+              <span class="sfc-tag">Interview-Based</span>
+              <span class="sfc-tag">Data Visualisation Copy</span>
+              <span class="sfc-tag">B2B Focus</span>
+              <span class="sfc-tag">PDF Design Brief</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 10 -->
+        <div class="service-full-card reveal">
+          <div class="sfc-icon">🎬</div>
+          <div class="sfc-body">
+            <h3>Video Scripts &amp; Podcast Show Notes</h3>
+            <p>Engaging scripts for YouTube explainer videos, brand films, Reels, TikToks, and corporate presentations. We also write structured podcast show notes with timestamps, key takeaways, and SEO descriptions that make your audio content findable and shareable long after the episode drops.</p>
+            <div class="sfc-tags">
+              <span class="sfc-tag">YouTube Scripts</span>
+              <span class="sfc-tag">Podcast Show Notes</span>
+              <span class="sfc-tag">Reel Captions</span>
+              <span class="sfc-tag">Corporate Video</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ PRICING ═══════════════════════════════════════════════ -->
+  <section class="section section--warm">
+    <div class="container">
+      <div style="text-align:center">
+        <span class="tag">Pricing</span>
+        <h2 class="section-title reveal">Straightforward packages.<br>No hidden surprises.</h2>
+        <p class="section-subtitle reveal" style="margin: 0 auto; text-align:center;">
+          All packages include unlimited revisions, plagiarism reports, and a dedicated account manager.
+        </p>
+      </div>
+      <div class="pricing-grid">
+
+        <div class="pricing-card reveal">
+          <p class="pricing-plan">Starter</p>
+          <div class="pricing-price"><sup>₹</sup>4,999</div>
+          <p class="pricing-period">per month · 4 deliverables</p>
+          <div class="pricing-features">
+            <div class="pricing-feature">4 Blog Posts (800 words each)</div>
+            <div class="pricing-feature">Basic keyword optimisation</div>
+            <div class="pricing-feature">Meta title &amp; description</div>
+            <div class="pricing-feature">Plagiarism report</div>
+            <div class="pricing-feature">2 rounds of revisions</div>
+            <div class="pricing-feature">48-hr turnaround</div>
+          </div>
+          <a href="#contact" class="btn btn-dark" style="width:100%;text-align:center;">Get Started</a>
+        </div>
+
+        <div class="pricing-card pricing-card--featured reveal">
+          <div class="pricing-badge">Most Popular</div>
+          <p class="pricing-plan">Growth</p>
+          <div class="pricing-price"><sup>₹</sup>12,999</div>
+          <p class="pricing-period">per month · 12 deliverables</p>
+          <div class="pricing-features">
+            <div class="pricing-feature">8 Blog Posts (1,200 words each)</div>
+            <div class="pricing-feature">4 Social Media Bundles</div>
+            <div class="pricing-feature">Full on-page SEO audit</div>
+            <div class="pricing-feature">2 Email newsletters</div>
+            <div class="pricing-feature">Unlimited revisions</div>
+            <div class="pricing-feature">24-hr priority turnaround</div>
+          </div>
+          <a href="#contact" class="btn btn-primary" style="width:100%;text-align:center;">Get Started</a>
+        </div>
+
+        <div class="pricing-card reveal">
+          <p class="pricing-plan">Authority</p>
+          <div class="pricing-price"><sup>₹</sup>24,999</div>
+          <p class="pricing-period">per month · custom volume</p>
+          <div class="pricing-features">
+            <div class="pricing-feature">Unlimited blog writing</div>
+            <div class="pricing-feature">Full website copywriting</div>
+            <div class="pricing-feature">White papers &amp; case studies</div>
+            <div class="pricing-feature">Press releases</div>
+            <div class="pricing-feature">Dedicated senior writer</div>
+            <div class="pricing-feature">Strategy calls included</div>
+          </div>
+          <a href="#contact" class="btn btn-dark" style="width:100%;text-align:center;">Contact Us</a>
+        </div>
+
+      </div>
+      <p style="text-align:center; margin-top:32px; font-size:0.85rem; color:var(--muted);">
+        Need something custom? <a href="#contact" style="color:var(--rust);text-decoration:underline;">Get in touch</a> and we will build a package that fits.
+      </p>
+    </div>
+  </section>
+
+  <!-- ══ FAQ ═══════════════════════════════════════════════════ -->
+  <section class="faq-section">
+    <div class="container">
+      <div style="text-align:center">
+        <span class="tag">FAQ</span>
+        <h2 class="section-title reveal">Questions we hear often</h2>
+      </div>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Do you really write everything by hand — no AI tools?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes, absolutely. Every piece of content that leaves our studio is written by a trained human writer. We do not use ChatGPT, Jasper, or any other AI generation tool in our writing process. We rely on original research, industry reading, and craft. Our clients pay for genuine human expertise — and that is precisely what they receive.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            How soon can I receive my first draft?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Standard turnaround for most pieces is 48 to 72 hours from the moment we receive your brief and any reference materials. Growth and Authority clients receive priority 24-hour turnaround. For urgent same-day requests, please reach out directly and we will do our best to accommodate.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            What information do you need from me to get started?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>A good brief covers: the topic or goal of the piece, your target audience, your preferred tone (professional, conversational, bold, etc.), any keywords you want included, competitor links or examples you admire, and the word count you need. We also send you a short questionnaire when you sign up to make sure nothing is missed.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            How many revisions are included?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Growth and Authority clients get unlimited revisions — we revise until you are genuinely happy. Starter clients get two rounds. If after two rounds you still feel something is off, reach out and we will sort it; we do not want any client walking away unsatisfied with their content.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Do you work with clients outside India?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Absolutely. We work with clients across the UK, USA, UAE, Australia, Singapore, and beyond. Our writers have experience creating content for English-speaking audiences in different regional markets. International invoicing and payment via Stripe, PayPal, or wire transfer are all supported.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Is the content plagiarism-free?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Every deliverable is run through Copyscape before it reaches you. We provide the plagiarism report alongside the content. Our writers work from original research and never copy or paraphrase other published work without full attribution, so the score is always clean.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CONTACT ═══════════════════════════════════════════════ -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <span class="tag">Get in Touch</span>
+          <h2>Let us talk about<br>your content goals</h2>
+          <p>Fill in the form and we will respond within one business day with a plan tailored to your brand and budget.</p>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">✉️</div>
+            <div class="contact-detail-text">
+              <strong>Email</strong>
+              <span>hello@inkcraftstudios.com</span>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-icon">📞</div>
+            <div class="contact-detail-text">
+              <strong>Phone / WhatsApp</strong>
+              <span>+91 98765 43210</span>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-icon">🕐</div>
+            <div class="contact-detail-text">
+              <strong>Working Hours</strong>
+              <span>Mon – Sat, 10 AM – 7 PM IST</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-box reveal">
+          <h3>Send us a message</h3>
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="fname" placeholder="Rahul" required />
+            </div>
+            <div class="form-group">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lname" placeholder="Sharma" required />
+            </div>
+            <div class="form-group full">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="rahul@yourcompany.com" required />
+            </div>
+            <div class="form-group full">
+              <label for="service">Service Interested In</label>
+              <select id="service" name="service">
+                <option value="">— Select a service —</option>
+                <option>Blog &amp; Article Writing</option>
+                <option>Website Copywriting</option>
+                <option>Product Description Writing</option>
+                <option>Email Copywriting</option>
+                <option>Social Media Content</option>
+                <option>On-Page SEO Optimisation</option>
+                <option>Ghostwriting</option>
+                <option>Press Release Writing</option>
+                <option>Case Studies &amp; White Papers</option>
+                <option>Video Scripts &amp; Podcast Notes</option>
+                <option>Multiple / Custom Package</option>
+              </select>
+            </div>
+            <div class="form-group full">
+              <label for="message">Tell us about your project</label>
+              <textarea id="message" name="message" rows="5" placeholder="Describe your brand, audience, what you need, and any deadlines…"></textarea>
+            </div>
+            <div class="full">
+              <button type="submit" class="btn btn-primary" style="width:100%;font-size:0.85rem;padding:16px;">
+                Send Message →
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ════════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">Ink<span>Craft</span> Studios</div>
+          <p>We write the words that build your brand, grow your audience, and drive real business results — the human way.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="services.html">Blog Writing</a></li>
+            <li><a href="services.html">Website Copy</a></li>
+            <li><a href="services.html">Product Descriptions</a></li>
+            <li><a href="services.html">Email Copy</a></li>
+            <li><a href="services.html">On-Page SEO</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="refund.html">Refund Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <ul>
+            <li><a href="mailto:hello@inkcraftstudios.com">hello@inkcraftstudios.com</a></li>
+            <li><a href="tel:+919876543210">+91 98765 43210</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 InkCraft Studios. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="privacy.html">Privacy</a>
+          <a href="refund.html">Refund Policy</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
